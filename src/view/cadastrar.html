@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<!--
+    Autor: Lucas Sampaio;
+    RA: 21200671;
+    Tema: Maratona (Quiz Mania: Maratona)
+-->
+
+<html lang="pt-br">
+
+    <head>
+        <!-- Metatags -->
+        <meta charset="utf-8">
+        
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="../../img/favicon.ico" />
+        
+        <title>Cadastramento - Quiz Mania: Maratona</title>
+
+        <!-- Fontes -->
+        <link href="https://fonts.googleapis.com/css?family=Cardo:400,400i,700|Roboto:400,500" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Old+Standard+TT:400,700" rel="stylesheet">
+
+        <!-- Folha de estilo -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+              integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link href="../../CSS/estilo.css" rel="stylesheet">
+        <link href="../../CSS/estilo-login.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <main>
+            <!-- Cabeçalho + Menu -->
+            <header class="header">
+                <a class="logo" title="Cadastrar: Quiz Mania - Maratona" href="index.html">
+                    <img id="logo" src="../../img/cabecalho.png" alt="QuizMania">
+                </a>
+                <!--
+                    <h1 class="nome_site">
+                        <a>
+                            <img src="../img/Nome-QuizMania-Maratona.png" alt="nome_site">
+                        </a>
+                    </h1>
+                    -->
+                <!-- Menu -->
+                <div class="nav">
+                    <ul>
+                        <li><a href="index.html" title="Home">Home</a></li>
+                        <li><a href="acessoAluno.html" title="Acesso-do-Aluno">Acesso do Aluno</a></li>
+                        <li><a href="login.html" title="Login">Login</a></li>
+                        <li><a href="cadastrar.html" title="Cadastrar">Cadastrar</a></li>
+
+                    </ul>
+                </div>
+            </header>
+
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm">
+                        <article>
+                            <h2>Cadastramento</h2>
+                            <section id="cadastramento">
+                                <form action="../action/respcad.php" method="post">
+                                    <div class="form-group">
+                                        <label for="nome">Nome</label>
+                                        <input type="text" class="formulario" id="nome" placeholder='Ex: "Joao"' name="nome" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email">E-mail</label>
+                                        <input type="email" class="formulario" id="email" placeholder="exemplo@exemplo.com" name="email" aria-describedby="email" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label id="lblsenha" for="senha">Senha</label>
+                                        <input type="password" class="formulario" id="senha" placeholder="Senha" name="senha" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="password">Confirmar Senha</label>
+                                        <input type="password" class="formulario" id="password" placeholder="Confirmar senha" name="confSenha" required>
+                                    </div>
+                                    <div class="row-button">
+                                        <button type="reset" class="btn btn-info">Cancelar</button>
+                                        <button type="submit" class="btn btn-primary" onclick="validar_senha()">Cadastrar</button>
+                                    </div>
+                                </form>
+                            </section>
+                        </article>
+                    </div>
+                </div>
+            </div>
+
+            
+            <footer>
+                <p>Quiz Maniz - Anhembi Morumbi 2019</p>
+                <p><small>&copy Copyright 2019 - Quiz Mania todos os direitos reservados </small></p>
+            </footer>
+                <script scr="../JS/comportamento.js"></script>
+        </main>
+    </body>
+
+</html>

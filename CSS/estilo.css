@@ -1,0 +1,210 @@
+/*
+ * <!--
+ *   Autor: Lucas Sampaio;
+ *   RA: 21200671;
+ *   Tema: Maratona (Quiz Mania: Maratona)
+ * -->
+ *
+*/
+
+html {
+    margin: 0;
+    padding: 0;
+    background-color: #ECEBFF;
+}
+
+body{
+    background-color: #ECEBFF;
+}
+
+main {
+    width: 1080px;
+    margin: 0px auto;
+    margin-top: -8px;
+    box-shadow: 0 0 10px #333;
+    font-family: 'Cardo', serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    width: 1080px;
+    /*height: 170px;*/
+    padding: 1px;
+    margin: 0 auto;
+    background-color: #4C5E5F ;
+    clear: both;
+    border-radius: 5px;
+}
+
+    #logo {
+        float: left;
+        clear: both
+    }
+
+    .nome_site a {
+        float: left;
+        display: block
+    }
+
+div{
+    border-radius: 5px
+}
+
+.nav {
+    clear: both;
+    width: 1080px;
+    height: 30px;
+    background-color: #4C5E5F
+}
+
+.nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 4px;
+    
+}
+
+.nav ul li {
+    display: inline-block;
+}
+
+.nav ul li a {
+    font-size: 0.85em;
+    text-decoration: none;
+    color: #FFF;
+    border-radius: 5px;
+    padding: 4px 20px
+
+}
+
+.nav ul li a:hover {
+    background-color: #BBD3D5;
+    color: #333
+}
+
+h3 {
+    margin: 5px 10px;
+    padding: 10px;
+    font-size: 2em;
+    margin-left: 1em
+}
+
+h4 {
+    margin: 5px 10px;
+    padding: 10px;
+    font-size: 1em;
+    margin-left: 0.5em
+}
+
+h3 {
+    margin-left: 0.5px;
+    font-size: 1.5em;
+    padding: 4px
+}
+
+#home{
+    text-decoration: none;
+}
+
+article p {
+    margin-left: 10px;
+    font-size: 1em
+}
+
+article, #regras, #principal {
+    clear: both;
+    width: 900px;
+    float: left;
+    text-align: justify;
+    margin: 30px
+}
+
+.container, row, col-sm{
+    text-align: center;
+    margin: initial;
+}
+
+.descricao{
+    width: 100%;
+    height: 90%;
+}
+.questao{
+    margin: 3px;
+    border-radius: 5px;
+}
+
+.info{
+    padding-block: inherit;
+}
+
+.row-left{
+    float: left;
+    display: grid;
+    height: 180px;
+    margin-top: 5px;
+}
+
+.row-right {
+    float: left;
+    display: grid;
+}
+
+.row-button{
+    width: 71%;
+    float: right;
+    margin-top: 10px;
+}
+
+.checkbox{
+
+}
+
+#enviar{
+    width: 80px;
+    margin-top: 5px;
+    margin-left: 120px;
+}
+
+textarea{
+    border-radius: 7px;
+}
+
+
+
+footer {
+    clear: both;
+    width: 900px;
+    margin: 0 auto;
+    padding: 5px;
+    font-size: 0.8em;
+    color: #FFF;
+    text-align: center;
+    background-color: #4C5E5F
+}
+
+#btn-login{
+    display: grid;
+    width: 15%;
+    float: left;
+    margin-right: 6px;
+}
+
+#btn-cad{
+    display: grid;
+    width: 15%;
+    float: left;
+}
+
+.form-group{
+    margin-bottom: 0.5em;
+    display: grid;
+    width: 50%;
+}
+
+.form-group #nome, #email, #senha{
+    border-radius: 5px;
+}
+
+.dropdown-menu.show{
+    background-color: #4C5E5F ;
+}

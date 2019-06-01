@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!--
+    Autor: Lucas Sampaio;
+    RA: 21200671;
+    Tema: Maratona (Quiz Mania: Maratona)
+-->
+
+<html lang="pt-br">
+
+    <head>
+        <!-- Metatags -->
+        <meta charset="UTF-8">
+        
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="../../img/favicon.ico" />
+
+        <title>Questões - Quiz Mania: Maratona</title>
+
+        <!-- Fontes -->
+        <link href="https://fonts.googleapis.com/css?family=Cardo:400,400i,700|Roboto:400,500" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Old+Standard+TT:400,700" rel="stylesheet">
+
+        <!-- Folha de estilo -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+              integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link href="../../CSS/estilo.css" rel="stylesheet">
+        <link href="../../CSS/estilo-login.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <main>
+            <!-- Menu -->
+            <header class="header">
+                <a class="logo" title="Login: Quiz Mania - Maratona" href="index.html">
+                    <img id="logo" src="../../img/cabecalho.png" alt="QuizMania">
+                </a>
+                
+                <div class="nav">
+                    <ul>
+                        <li><a href="index.html" title="Home">Home</a></li>
+                        <li><a href="cadastrar.html" title="Cadastrar">Cadastrar</a></li>
+                        <li><a href="login.html" title="Login">Login</a></li>
+                        <li><a href="#">Logout Aluno</a></li>
+                    </ul>
+                </div>
+            </header>
+
+            <article>
+                <section>
+                    <form id="questao" name="questao" method="post" action="resposta.php">
+                        <label>1) Assinale a alternativa correta:</label> <br/>
+                        <label>
+                            <input type="radio" name="questao1" value="a" /> A) 1994;</label>
+                        <br />
+                        <label>
+                            <input type="radio" name="questao1" value="b" /> B) 1995;</label>
+                        <br />
+                        <label>
+                            <input type="radio" name="questao1" value="c" /> C) 1992;</label>
+                        <br />
+                        <label>
+                            <input type="radio" name="questao1" value="d" /> D) 1993.</label>
+                        <br />
+                        <button type="submit" value="responder">Responder</button>
+                        <br />
+                    </form>
+                </section>
+            </article>
+
+            <footer>
+                <p>Quiz Maniz - Anhembi Morumbi 2019</p>
+                <p><small>&copy Copyright 2019 - Quiz Mania todos os direitos reservados </small></p>
+            </footer>
+
+            <script src="../../JS/comportamento.js"></script>
+        </main>
+    </body>
+
+</html>

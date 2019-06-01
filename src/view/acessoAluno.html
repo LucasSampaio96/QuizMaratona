@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!--
+    Autor: Lucas Sampaio;
+    RA: 21200671;
+    Tema: Maratona (Quiz Mania: Maratona)
+-->
+
+<html lang="pt-br">
+
+    <head>
+        <!-- Metatags -->
+        <meta charset="utf-8">
+        
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="../../img/favicon.ico" />
+        
+        <title>Acesso Aluno - Quiz Mania: Maratona</title>
+
+        <!-- Fontes -->
+        <link href="https://fonts.googleapis.com/css?family=Cardo:400,400i,700|Roboto:400,500" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Old+Standard+TT:400,700" rel="stylesheet">
+
+        <!-- Folha de estilo -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+              integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link href="../../CSS/estilo.css" rel="stylesheet">
+        <link href="../../CSS/estilo-login.css" rel="stylesheet">
+        
+    </head>
+
+    <body>
+        <main>
+            <!-- Cabeçalho + Menu -->
+            <header class="header">
+                <a class="logo" title="Acesso do Aluno: Quiz Mania - Maratona" href="index.html">
+                    <img id="logo" src="../../img/cabecalho.png" alt="QuizMania">
+                </a>
+                                
+                <!-- Menu -->
+                <div class="drop"> 
+                    <nav class="nav nav-aberta">
+                        <nav class="wrap">
+                            <ul class="listaNav">
+                                <li class="nav-item"><a href="index.html" title="Home">Home</a></li>
+                                <li class="nav-item"><a href="acessoAluno.html" title="Acesso do aluno">Acesso do Aluno</a></li>
+                                <li class="nav-item"><a href="login.html" title="Login">Login</a></li>
+                                <li class="nav-item"><a href="cadastrar.html" title="Cadastrar">Cadastrar</a></li>
+                            </ul>
+                        </nav>
+                    </nav>
+                </div>
+            </header>
+
+            <article>
+                <div class="busca">
+                    <h1>Sala</h1>
+                    <form action="../action/acessoAluno.php" method="post">
+                        <div class="form-group">
+                            <label for="nome">Login</label>
+                            <input type="nome" class="form-control" id="nome" aria-describedby="nome"
+                                   placeholder="Ex: JOAO" name="email">
+                        </div>
+                        <div class="form-group">
+                            <label id="lblsala" for="sala">Sala</label>
+                            <input type="text" class="form-control" id="sala" placeholder="102030" name="sala" maxlength="6"></br>
+                            <button class="btn btn-primary" id="buscar" type="submit" value="Buscar" name="Buscar" onclick="validar_sala()">Buscar</button>
+                        </div>
+                </div>
+            </article>
+
+            <footer>
+                <p>Quiz Maniz - Anhembi Morumbi 2019</p>
+                <p><small>&copy Copyright 2019 - Quiz Mania todos os direitos reservados </small></p>
+            </footer>
+
+            <script></script>
+        </main>
+    </body>
+
+</html>
